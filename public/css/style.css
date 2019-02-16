@@ -1,0 +1,135 @@
+body{
+  font-family: Montserrat !important;
+}
+/* NavBar */
+.top-bar{
+  font-size: 11px;
+  line-height: 2.5;
+  background-color: #000;
+  color: #FFF;
+  text-align: center;
+}
+
+  /* Disbale the Contact No. */
+.disable{
+  pointer-events: none;
+  cursor: default;
+}
+.nav-item{
+  padding: 0 8px;
+}
+.logo{
+  position: absolute;
+  bottom: 0;
+}
+.navbar2{
+  background-color: #000 !important;
+}
+/* Adding Dropdown Hover */
+.dropdown:hover>.dropdown-menu{
+  display: block;
+  transition-duration: 0.5s !important;
+}
+/* Removes the Arrow */
+.dropdown-toggle::after {
+    display:none;
+}
+/* DropDown Styles */
+.drpdwn{
+  text-align: center;
+  font-size: 12px;
+}
+/* Dropdown Item Font */
+.dropdown-item{
+  font-size: 10px;
+}
+
+/* Banner Property */
+.jumbotron{
+  padding: 0;
+}
+
+/* Footer */
+.ftop_elem{
+  background-color: #474747;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+.dropdown{
+  font-size: 13px;
+}
+.f_mid{
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+.subscribe-box{
+  width:200px;
+  height:35px;
+  text-align:center;
+  margin-top: 15px;
+  background-color: #e0dddd;
+}
+.f_item{
+  color: #000;
+  text-decoration: none;
+}
+.f_item:hover{
+  color: red;
+  text-decoration: none;
+}
+.social-icon{
+  margin: 20px 10px;
+}
+.contentName{
+  margin-top: 18px;
+}
+#allProducts{
+  min-height: 800px;
+}
+.details{
+  padding: 8px;
+}
+.price{
+  float: right;
+}
+.content:hover .image-holder{
+	opacity: .5;
+  height: 330px;
+  width: 500px;
+}
+.content:hover .Add{
+	opacity: 1;
+  height: auto;
+  width: 100%;
+  margin: auto;
+}
+.Add{
+  opacity: 0;
+  height: 0;
+  width: 0;
+  margin-left: 16px;
+}
+.card{
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+.product{
+  margin-bottom: 16px;
+}
+/* Main Elements */
+
+.photo{
+  height: 500px;
+  width: 400px;
+  background-position: center;
+  background-size: cover;
+  margin-top: 24px;
+  margin-bottom: 36px;
+}
+.sizeStrike{
+  text-decoration: line-through !important;
+}
+.phts:hover body{
+  opacity: 0;
+}

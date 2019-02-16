@@ -1,0 +1,29 @@
+<%if(product.relation1Size.S == 0){%>
+   <button type="button" class="btn btn-secondary"><s>S</s></button>
+<%} else {%>
+  <button type="button" class="btn btn-secondary">S</button>
+<%}%>
+
+<%if(product.relation1Size.M == 0){%>
+   <button type="button" class="btn btn-secondary"><s>M</s></button>
+<%} else {%>
+  <button type="button" class="btn btn-secondary">M</button>
+<%}%>
+
+<%if(product.relation1Size.L == 0){%>
+   <button type="button" class="btn btn-secondary"><s>L</s></button>
+<%} else {%>
+  <button type="button" class="btn btn-secondary">L</button>
+<%}%>
+
+<%if(product.relation1Size.XL == 0){%>
+   <button type="button" class="btn btn-secondary"><s>XL</s></button>
+<%} else {%>
+  <button type="button" class="btn btn-secondary">XL</button>
+<%}%>
+
+<%if(product.relation1Size.XXL == 0){%>
+   <button type="button" class="btn btn-secondary"><s>XXL</s></button>
+<%} else {%>
+  <button type="button" class="btn btn-secondary">XXL</button>
+<%}%>

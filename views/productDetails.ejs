@@ -1,0 +1,80 @@
+<% include partials/homeHeader.html %>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous">
+</script>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-5">
+      <div class="detail-view photo" style="background-image: url(<%=product.image[0]%>);"></div>
+      <div class="productPhotos">
+        <div class="row">
+          <%for(var i=0; i<product.image.length; i++){%>
+            <div class="col-lg-3">
+              <%if(i==0){%>
+                <img class="img-thumbnail phts" style="opacity: 1" src="<%=product.image[i]%>" alt="">
+              <%} else {%>
+                <img class="img-thumbnail phts" style="opacity: 0.3" src="<%=product.image[i]%>" alt="">
+              <%}%>
+
+            </div>
+          <%}%>
+        </div>
+        </div>
+      </div>
+    <div class=""></div>
+    <div class="col-lg-7">
+      <h5 style="margin-top:34px;"><%=product.title%></h5>
+      <h6 style="color:gray;"><%=product.type%></h6>
+      <br>
+      <h2>Rs. <%=product.price%>&nbsp;<span style="font-size:18px"><strike>Rs. <%=product.price+500%></strike></span></h2>
+
+      <div style="margin-top:8%">
+          <p><%=product.relation1%>&nbsp;Size</p>
+          <div class="" style="margin:0; max-width: 80%; padding:8px; background-color:#f2f2f2;">
+            <div class="btn-group" role="group">
+              <div class="row">
+                  <%for(var i=0; i<product.relation1Size.size.length; i++){%>
+                    <div class="col-lg-2" style="margin:0">
+                        <%if(product.relation1Size.stock[i] == 0){%>
+                        <button style="font-size:12px; margin-bottom:10px; background-color:#f2f2f2;" type="button" class="" name="button"><s><%=product.relation1Size.size[i]%></s></button>
+                        <%} else {%>
+                        <button style="font-size:12px; margin-bottom:10px; background-color:#f2f2f2;" type="button" class="" name="button"><%=product.relation1Size.size[i]%></button>
+                      <%}%>
+                    </div>
+                  <%}%>
+              </div>
+            </div>
+          </div>
+        <br>
+        <p><%=product.relation2%>&nbsp;Size</p>
+        <div class="" style="margin:0; max-width: 80%; padding:8px; background-color:#f2f2f2;">
+          <div class="btn-group" role="group">
+            <div class="row">
+                <%for(var i=0; i<product.relation2Size.size.length; i++){%>
+                  <div class="col-lg-2">
+                      <%if(product.relation2Size.stock[i] == 0){%>
+                      <button style="font-size:12px; margin-bottom:10px; background-color:#f2f2f2;" type="button" class="" name="button"><s><%=product.relation2Size.size[i]%></s></button>
+                      <%} else {%>
+                      <button style="font-size:12px; margin-bottom:10px; background-color:#f2f2f2;" type="button" class="" name="button"><%=product.relation2Size.size[i]%></button>
+                    <%}%>
+                  </div>
+                <%}%>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <br><br>
+      </div>
+    </div>
+    <br><br>
+  </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="/js/zoom.js"></script>
+<script type="text/javascript" src="/js/productPhotos.js"></script>
+<% include partials/homeFooter.html %>
