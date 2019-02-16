@@ -4,8 +4,8 @@ console.log("Hello world")
 app.use(express.static(__dirname + '/public'));
 var mongo = require('mongodb');
 var mongoose = require('mongoose');
-mongoose.connect("mongodb://localhost/brandmore");
-
+// mongoose.connect("mongodb://localhost/brandmore");
+mongoose.connect("mongodb://burhankhom:Burhan@123@cluster0-shard-00-00-tzgdv.mongodb.net:27017,cluster0-shard-00-01-tzgdv.mongodb.net:27017,cluster0-shard-00-02-tzgdv.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true/brandmore");
 var productSchema = new mongoose.Schema({
   link: String,
   name: String,
