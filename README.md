@@ -1,1 +1,1 @@
-# Brand-More
+# BrandMore
