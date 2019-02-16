@@ -91,6 +91,7 @@ app.get('/collections/:link/product', function(req, res){
     });
 });
 
-app.listen(5000, function(){
-  console.log("listening on port 5000")
-});
+// app.listen(5000, function(){
+//   console.log("listening on port 5000")
+// });
+app.listen(process.env.PORT, function(){console.log("BrandMore Server Started: "+process.env.PORT);});
