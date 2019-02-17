@@ -130,6 +130,8 @@ body{
   background-size: 100% 100%;
   margin-top: 24px;
   margin-bottom: 36px;
+  -webkit-transition-property: opacity;
+  -webkit-ransition-duration: : 0.9s;
 }
 .sizeStrike{
   text-decoration: line-through !important;
@@ -137,6 +139,8 @@ body{
 .phts{
   height: 80px !important;
   margin-right: 1px !important;
+  transition-property: opacity;
+  transition-duration: 0.9s;
 }
 .phts:hover body{
   opacity: 0;

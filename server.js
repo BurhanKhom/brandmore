@@ -52,7 +52,7 @@ for(var i=0; i<imgs.length; i++)
   }
 }
 images.push(imgs.substring(start));
-console.log(images);
+// console.log(images);
   var product = new Product({
     link: req.body.link,
     name: req.body.linkTitle,
