@@ -92,10 +92,14 @@ body{
 .price{
   float: right;
 }
+.image-holder{
+  height: 370px !important;
+  width: 400px !important;
+}
 .content:hover .image-holder{
 	opacity: .5;
-  height: 330px;
-  width: 500px;
+  height: 330px !important;
+  width: 500px !important;
 }
 .content:hover .Add{
 	opacity: 1;
@@ -132,4 +136,7 @@ body{
 }
 .phts:hover body{
   opacity: 0;
+}
+#inputFabric {
+  white-space: pre-line;
 }

@@ -1,0 +1,290 @@
+<% include partials/homeHeader.html %>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous">
+</script>
+
+<div class="container" style="margin-top:20px;">
+
+  <form action="/new" method="POST">
+
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputR1">Relation 1</label>
+        <input type="text" class="form-control" id="inputR1" name="relation1" placeholder="Father">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputR2">Relation 2</label>
+        <input type="text" class="form-control" id="inputR2" name="relation2" placeholder="Son">
+      </div>
+    </div>
+
+
+    <div class="form-group">
+      <label for="inputImages">Image URLs (Separated by commas)</label>
+      <input type="text" class="form-control" id="inputImages" name="imageUrls" placeholder="url1,url2,url3">
+    </div>
+
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputLink">Link</label>
+        <select id="inputLink" data-live-search="true" name="link" class="form-control">
+            <option selected>Choose...</option>
+        </select>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputName">Products Title</label>
+        <input type="text" class="form-control" id="inputName" name="linkTitle" placeholder="" readonly>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="inputTitle">Title</label>
+      <input type="text" class="form-control" id="inputTitle" name="title" placeholder="Example: Black My Son/Dad My Hero Father-Son Tees">
+    </div>
+
+
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputType">Type</label>
+        <input type="text" class="form-control" id="inputType" name="type" placeholder="Example: Combo Collection">
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputPrice">Price</label>
+        <input type="text" class="form-control" name="price" id="inputPrice">
+      </div>
+    </div>
+
+    <div class="form-row">
+
+      <div class="form-group col-md-6">
+        <h6>Relation 1 Sizes</h6>
+        <div class="row">
+          <div class="col-md-2">
+            <label> S</label>
+          </div>
+          <div class="col-md-3">
+            <input type="text" name="S" value="0">
+            <br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2">
+            <label> M</label>
+          </div>
+          <div class="col-md-3">
+            <input type="text" name="M" value="0">
+            <br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2">
+            <label> L</label>
+          </div>
+          <div class="col-md-3">
+            <input type="text" name="L" value="0">
+            <br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2">
+            <label> XL</label>
+          </div>
+          <div class="col-md-3">
+            <input type="text" name="XL" value="0">
+            <br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2">
+            <label> XXL</label>
+          </div>
+          <div class="col-md-3">
+            <input type="text" name="XXL" value="0">
+            <br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2">
+            <label> 6-12M</label>
+          </div>
+          <div class="col-md-3">
+            <input type="text" name="o12M" value="0">
+            <br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2">
+            <label> 12-24M</label>
+          </div>
+          <div class="col-md-3">
+            <input type="text" name="o24M" value="0">
+            <br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2">
+            <label> 2-4Y</label>
+          </div>
+          <div class="col-md-3">
+            <input type="text" name="o4Y" value="0">
+            <br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2">
+            <label> 4-6Y</label>
+          </div>
+          <div class="col-md-3">
+            <input type="text" name="o6Y" value="0">
+            <br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2">
+            <label> 6-8Y</label>
+          </div>
+          <div class="col-md-3">
+            <input type="text" name="o8Y" value="0">
+            <br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2">
+            <label> 8-10Y</label>
+          </div>
+          <div class="col-md-3">
+            <input type="text" name="o10Y" value="0">
+            <br>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="form-group col-md-6">
+        <h6>Relation 2 Sizes</h6>
+        <div class="row">
+          <div class="col-md-2">
+            <label> S</label>
+          </div>
+          <div class="col-md-3">
+            <input type="text" name="S2" value="0">
+            <br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2">
+            <label> M</label>
+          </div>
+          <div class="col-md-3">
+            <input type="text" name="M2" value="0">
+            <br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2">
+            <label> L</label>
+          </div>
+          <div class="col-md-3">
+            <input type="text" name="L2" value="0">
+            <br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2">
+            <label> XL</label>
+          </div>
+          <div class="col-md-3">
+            <input type="text" name="XL2" value="0">
+            <br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2">
+            <label> XXL</label>
+          </div>
+          <div class="col-md-3">
+            <input type="text" name="XXL2" value="0">
+            <br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2">
+            <label> 6-12M</label>
+          </div>
+          <div class="col-md-3">
+            <input type="text" name="t12M2" value="0">
+            <br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2">
+            <label> 12-24M</label>
+          </div>
+          <div class="col-md-3">
+            <input type="text" name="t24M2" value="0">
+            <br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2">
+            <label> 2-4Y</label>
+          </div>
+          <div class="col-md-3">
+            <input type="text" name="t4Y2" value="0">
+            <br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2">
+            <label> 4-6Y</label>
+          </div>
+          <div class="col-md-3">
+            <input type="text" name="t6Y2" value="0">
+            <br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2">
+            <label> 6-8Y</label>
+          </div>
+          <div class="col-md-3">
+            <input type="text" name="t8Y2" value="0">
+            <br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2">
+            <label> 8-10Y</label>
+          </div>
+          <div class="col-md-3">
+            <input type="text" name="t10Y2" value="0">
+            <br>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-4">
+        <label for="inputFabric">Fabric Details</label>
+        <textarea style="font-size:12px;" class="form-control" name="fabric" id="inputFabric" rows="10" placeholder="">T-shirt - 100% Cotton&#13;&#10;Color- Black&#13;&#10;WASH CARE:&#13;&#10;Hand wash&#13;&#10;Machine wash delicate&#13;&#10;Do not bleach&#13;&#10;Do not wring&#13;&#10;Do not tumble dry&#13;&#10;Do not brush&#13;&#10;Do not iron on print/embroidery</textarea>
+      </div>
+
+      <div class="form-group col-md-4">
+        <label for="inputFit">Fit Details</label>
+        <textarea style="font-size:12px;" class="form-control" name="fit" id="inputFit" rows="10" placeholder="">Regular Fit: Choose your regular size. Refer to Size chart if a looser fit is desired</textarea>
+      </div>
+
+      <div class="form-group col-md-4">
+        <label for="inputDescription">Description</label>
+        <textarea style="font-size:12px;" class="form-control" name="description" id="inputFit" rows="10" placeholder="">Our first hero will always be our dad & for a dad his only hero will be his son.These matching set combo of “My Son/My Dad Hero Tees” by BrandMore. Memories to cherish for a lifetime.</textarea>
+      </div>
+
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+<script type="text/javascript" src="/js/new.js"></script>
