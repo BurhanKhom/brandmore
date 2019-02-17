@@ -127,12 +127,16 @@ body{
   height: 500px;
   width: 400px;
   background-position: center;
-  background-size: cover;
+  background-size: 100% 100%;
   margin-top: 24px;
   margin-bottom: 36px;
 }
 .sizeStrike{
   text-decoration: line-through !important;
+}
+.phts{
+  height: 80px !important;
+  margin-right: 1px !important;
 }
 .phts:hover body{
   opacity: 0;

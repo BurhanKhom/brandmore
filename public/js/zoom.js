@@ -37,7 +37,7 @@ zoomBoxes.forEach(function(image) {
     image.onmouseleave = function(e) {
       Object.assign(image.style, {
         backgroundPosition: 'center',
-        backgroundSize: 'cover'
+        backgroundSize: '100% 100%'
       });
     };
   }
